@@ -1,0 +1,572 @@
+<html>
+<head>
+    <!-- With thanks to Zara, who's been with me on this adventure together since day one :))   -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle of a War foretold</title>
+    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" href="https://esm.sh/lightgallery@2.9.0/css/lightgallery-bundle.min.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css" rel="stylesheet">
+    <!-- Imports the Mapbox GL JS bundle -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Enriqueta:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script type='module' src="js/story.js"></script>
+    <script type="module" src="js/wallet-list.js"></script>
+    <script type="module" src="js/chart_main.js"></script>
+    <script type="module" src="js/explainer_1.js"></script>
+    <script type="module" src="js/explainer_2.js"></script>
+    <script type="module" src="js/multiples_28.js"></script>
+    <script type="module" src="js/multiples_31.js"></script>
+    <script type="module" src="js/multiples_ET.js"></script>
+    <script type="module" src="js/map.js"></script>
+    <script type="module" src="js/lightgallery_init.js"></script>
+
+    <section class="relative pointer-events-none">
+        <header class="headline absolute top-0 w-full z-50 text-center py-4 tracking-widest text-sm font-bold uppercase border-b border-white text-white">
+            BLOCKHEAD
+        </header>
+
+        <figure class="sticky top-0 m-0 z-0 flex items-center justify-center margin w-full h-screen overflow-hidden">
+            <video data-visual='0' src="/pics/CENTCOM_headline_1.mp4" autoplay muted loop class="w-full h-full object-cover opacity-100"></video>
+            <div class="all-videos absolute w-full h-full grid grid-cols-4">
+                <!-- // add stagger effect for this videos to load gradually. -->
+                <div><video data-visual='1' src="/pics/strike_1.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/strike_2.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/strike_3.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/strike_4.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+
+                <div><video data-visual='1' src="/pics/CENTCOM_extracted_1.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/CENTCOM_extracted_2.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/CENTCOM_extracted_3.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/idf_1.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+
+                <div><video data-visual='1' src="/pics/idf_2.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/idf_3.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/idf_4.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/idf_khamenei.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+
+                <div><video data-visual='1' src="/pics/CENTCOM_extracted_4.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/CENTCOM_extracted_5.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/strike_colour.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+                <div><video data-visual='1' src="/pics/strike_drone.mp4" autoplay muted loop class="w-full h-full object-cover opacity-0"></video></div>
+
+
+        </div>
+            <div class="news-clippings absolute left-1/2 -translate-x-1/2 w-350 inset-0 pointer-events-none overflow-hidden">
+                <div class="doc-container z-10" style="width: 32%; top: 20%; left: 15%;">
+                    <img data-visual='2' src="/pics/headlines/FT_2.png" class="w-full opacity-0">
+                    <div class="highlight" highlight-step="1" style="top: 5%; left: 40%; width: 38%; height: 12%;"></div>
+                    <div class="highlight" highlight-step="2" style="top: 50%; left: 8%; width: 66%; height: 12%;"></div>
+                </div>
+                <div class="doc-container z-20" style="width: 37%; top: 38%; left: 5%;">
+                    <img data-visual='2' src="/pics/headlines/Reuters.png" class="w-full opacity-0">
+                    <div class="highlight" highlight-step="1" style="top: 70%; left: 1%; width: 95%; height: 12%;"></div>
+                    <div class="highlight" highlight-step="2" style="top: 85%; left: 1%; width: 22%; height: 12%;"></div>
+                </div>
+                <div class="doc-container z-10" style="width: 35%; top: 65%; left: 10%;">
+                    <img data-visual='2' src="/pics/headlines/Guardian_2.png" class="w-full opacity-0">
+                    <div class="highlight" highlight-step="1" style="top: 65%; right: 10%; width: 20%; height: 10%;"></div>
+                    <div class="highlight" highlight-step="2" style="top: 75%; left: 1%; width: 15%; height: 10%;"></div>
+                </div>
+                <div class="doc-container z-20" style="width: 40%; top: 23%; right: 10%;">
+                    <img data-visual='2' src="/pics/headlines/Independent.png" class="w-full opacity-0">
+                    <div class="highlight" highlight-step="1" style="top:15%; left: 80%; width: 15%; height: 15%;"></div>
+                    <div class="highlight" highlight-step="2" style="top:40%; left: 2%; width: 20%; height: 15%;"></div>
+                </div>
+                <div class="doc-container z-10" style="width: 30%; top: 40%; right: 6%;">
+                    <img data-visual="2" src="/pics/headlines/FT_1.png" class="w-full opacity-0">
+                    <div class="highlight" highlight-step="1" style="top: 60%; left: 2%; width: 77%; height: 6%;"></div>
+                    <div class="highlight" highlight-step="2" style="top: 50%; left: 2%; width: 90%; height: 6%;"></div>
+                </div>
+                <div class="doc-container z-30" style="width: 25%; top: 60%; right: 25%;">
+                    <img data-visual='2' src="/pics/ANI.jpg" class="w-full opacity-0">
+                    <!-- <div class="highlight" highlight-step="1" style="top: 32%; left: 8%; width: 84%; height: 6%;"></div>
+                    <div class="highlight" highlight-step="2" style="top: 55%; left: 8%; width: 60%; height: 3%;"></div> -->
+                </div>
+            </div>
+            <video data-visual="3" class="absolute mx-auto w-200 object-cover border-2 border-emerald-800 opacity-0" autoplay muted loop src="/pics/cctv_amazon.mp4"></video>
+            <div data-visual="5" class="absolute wallet-list pointer-events-none w-full object-cover opacity-0 grid grid-cols-4 gap-5 mx-auto p-8 m-7"></div>
+            <div data-visual="5" class="absolute bottom-0 left-0 w-full h-48 bg-linear-to-t from-[#262f40] to-transparent opacity-0 pointer-events-none"></div>
+        </figure>
+
+        <div class="relative z-10">
+            <div class="step min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center pointer-events-auto">
+                <div class="bg-[#262f40] p-8 opacity-81">
+                    On 28th February 6:15 AM UTC, American and Israeli forces launched the first strikes of Operation Epic Fury and Operation Roaring Lion.
+                </div>
+            </div>
+
+            <div class="step min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center pointer-events-auto">
+                <div class="bg-[#262f40] p-8 opacity-81">
+                    Hundreds were killed on the first day as munitions rained down on Iran. Among the dead was Supreme Leader Ayatollah Ali Khamenei, who had ruled the nation without reprieve since 1989.
+                </div>
+            </div>
+
+            <div class="step min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center pointer-events-auto">
+                <div class="bg-[#262f40] p-8 opacity-81">
+                    In the days after, <a href="https://www.ft.com/content/bf998c69-ab46-4fa3-aae4-8f18f7387836?syn-25a6b1a6=1" target="_blank" rel="noopener noreferrer">defence officials celebrated his assassination as a intelligence triumph</a>. Years of top-secret planning had gone into the strike, and the timing couldn't have been more perfect.
+                </div>
+            </div>
+
+
+            <div class="step min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center pointer-events-auto">
+                <div class="bg-[#262f40] p-8 opacity-81">
+                  However, not everyone was caught unawares. 8,000 miles away in a sleepy London suburb, a different type of killing had taken place. 
+                </div>
+            </div>
+
+            <!-- <div class="wallet-scroll-section"> -->
+
+
+            <div class="step min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center pointer-events-none" data-step="5">
+                <div class="bg-[#262f40] p-8 opacity-81">
+                One hour before the strike, Amazon's EU-WEST-2 data centre was flooded by trading activity. A small group of wallets, most of them with no trading history, had placed well-timed bets on the start of a war in Iran. They would make a total of $6,073,083 in profits.
+                </div>
+            </div>
+
+            <div class="step min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center pointer-events-none" data-step="6">
+                <div class="bg-[#262f40] p-8 opacity-81">
+                   One of the biggest winners was Vivaldi007. The account made US$629,184 by accurately predicting the day of the strike, the successful assasination of Khamenei, as well as Israel's close participation.
+                </div>
+            </div>
+
+            <div class="step min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center pointer-events-none" data-step="7">
+                <div class="bg-[#262f40] p-8 opacity-81">
+                    Despite the exceptional foresight, Vivaldi007 did not return. A total of USD$400,000 was transferred out of his account on the first day. The rest would follow on the 3rd of March.
+                </div>
+            </div>
+
+             <div class="step min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center pointer-events-none" data-step="7">
+                <div class="bg-[#262f40] p-8 opacity-81">
+                    Like so many of the wallets related which had won big on Iran, it hasn't been seen since March.
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- maybe not needed -->
+            <div class="h-32"></div>
+        </div>
+    </section>
+
+    <section class="relative z-10 bg-[#262f40] pointer-events-none">
+
+        
+        <div class="mx-auto max-w-md flex items-center justify-center gap-2 text-sm text-center text-gray-400 mt-20">
+            <span class="w-2 h-2 bg-green-500 inline-block"></span>
+            Investigations
+        </div>
+            
+        <div class=" main-headline mx-auto max-w-4xl text-7xl font-bold text-center mt-6">
+            CHRONICLE <br> OF A WAR <br>FORETOLD
+        </div>
+        <div class="mx-auto w-120 flex items-center leading-tight italic justify-center text-[25px] text-shadow-white font-normal p-8 text-center">
+             Polymarket users made millions by predicting the Iran War. How they did so remains a mystery.
+        </div>
+        <div class="mx-auto max-w-prose pb-8 text-center text-gray-400">
+            By <span class="underline">Pan Jie</span>
+        </div>
+    </section>
+
+    <section>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Vivaldi007 had placed its bets on <a href="https://polymarket.com" class="underline hover-animate">Polymarket</a>, an online exchange where users can buy and sell shares tied to the likelihood of future events. 
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            How these 'prediction markets' work is disarmingly simple. Every 'market' is a binary question that can be answered YES / NO. Every share of YES / NO is priced according to their real-world odds.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            They begin at $0 for impossible events (e.g. "Will Donald Trump be president in 2177?") and $1 for certain events (e.g. "Will Donald Trump post on Truth Social in 2026?").
+        </div>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+           Users profit by buying the correct side of an event. The more improbable your outcome, the cheaper the shares and the higher the potential profits. If you had $1,000, you could buy either 5,000 shares of a highly-unlikely event with 20% chance of success or 1,250 shares of a highly-likely event with 90% chance of success. 
+        </div>
+
+        <div class="headline mx-auto max-w-prose text-center font-bold text-2xl mt-10 pt-4">
+            <span class="inline-flex items-center gap-3"><span class="w-4 h-4 bg-green-500 shrink-0"></span>Explainer: How much can $1,000 get you on Polymarket?</span>
+        </div>
+        <div id="explainer_1" class="mx-auto max-w-5xl w-full "></div>
+        <div id="explainer_2" class="mx-auto max-w-5xl w-full mb-10"></div>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+           The former could reap you a windfall of $4,000, while the latter will only yield $125 in total—barely enough to pay the transaction fees.
+        </div>
+
+      
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Despite its relative simplicity, prediction markets have a track record for uncanny accuracy. They've been successful in forecasting everything from Federal Reserve rates to election results. One of the first prediction markets is the non-profit <a href="https://iem.uiowa.edu/iem/" class="underline hover-animate" target="_blank">Iowa Electronic Markets (IEM)</a>, created as an experiment by the University of Iowa's Tippie College of Business. Since its start in 1988, the IEM has beaten traditional polls<a href="https://www.sciencedirect.com/science/article/abs/pii/S0169207008000320" class="underline hover-animate" target="_blank">74% of the time</a>.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            However, it is the surging popularity of commercial platforms like Polymarket and Kalshi that have driven prediction markets to the forefront of public consciousness and controversy. The companies have <a href="https://www.businessinsider.com/polymarket-kalshi-trump-victory-future-prediction-markets-2024-11" class="underline hover-animate">correctly predicted major world events</a> and made billionaires of their young founders. They've also been accused of <a href="https://www.theguardian.com/us-news/ng-interactive/2026/may/19/kalshi-polymarket-gambling-addiction-sports-betting" class="underline hover-animate" target="_blank">peddling addiction to a new generation of punters</a>.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+           Most finance professionals are more circumspect. Simon, a professional forecaster with the RAND Corporation, argues they could provide 'a lot of value' in areas with poor information and high uncertainty.
+        </div>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+           "If we were flying through Dubai, and the conflict kicks off again. There's at least some value in knowing there's a 20% chance flights will be cancelled, and that's important for a multi-billion dollar industry."
+        </div>
+
+         <div class="mx-auto max-w-prose pt-4 pb-4">
+           Jon Reiter, a former trader who now runs his own <a href="https://www.chainargos.com/" class="underline hover-animate" target="_blank">blockchain analytics firm</a>, also recognises their value for decision-making. "Businesses need to be aware of upcoming business events like tax rates, and elections affect tax rates and tax rates affect what country you build your factory in," he said "it's kind of a simple example but it's real."
+        </div>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+           "I mean, more information about the world is always an unmitigated social good," he added.
+        </div>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+           The only catch is when such information comes from illegal sources, like classified military briefings or internal company records. In such cases, prediction is likely to have a corrosive effect on public institutions, said Jon. The volumes on Polymarket might be much smaller than capital markets or commodities, but they have a outsized impact on public trust and perception.
+        </div>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+          "$10,000 made by a cabinet minister betting on military deployments has much more of a negative effect than $10,000 overcharged on the highway construction contracts, for example," he said.
+        </div>
+
+         <div class="mx-auto max-w-prose pt-4 pb-4">
+          Unfortunately, the DeFi structure of Polymarket—anonymity guaranteed—makes it difficult to distinguish corruption from prediction. Since the start of 2026, four men have been arrested for trading on confidential information on Polymarket. They include a <a href="https://www.justice.gov/opa/pr/us-soldier-charged-using-classified-information-profit-prediction-market-bets" class="underline hover-animate" target="_blank">US special forces operator who traded on Maduro's capture</a>, a <a href="https://www.bbc.co.uk/news/articles/c052yv259jvo" class="underline hover-animate" target="_blank">Google engineer who traded on the top search terms</a> and <a href="https://www.aljazeera.com/news/2026/2/12/israel-charges-two-over-betting-on-military-operations" class="underline hover-animate" target="_blank">two IDF officers who traded on military strikes in the Middle East</a>.
+        </div>
+
+         <div class="mx-auto max-w-prose pt-4 pb-10">
+          Polymarket see the arrests as an affirmation of its commitment to 'market integrity', but the numbers tell a different story. According to on-chain data examined by BLOCKHEAD Research, there are large flows of anomalous activity around Iran, which remain uninvestigated by the US authorities.
+        </div>
+
+        <div id="chart" class="sticky top-0 h-screen z-0 w-full mx-auto">
+            <span id="label-aaamsaasa" class="text-white text-xs absolute top-[70%] left-[20%]">
+                <span class="bg-[#636940]  px-1 py-0.5">$30,157.58 Profit</span><br>
+                <span class="bg-[#636940]  px-1 py-0.5">Withdrawn: 02/28/2026 4:16:07 PM GMT</span>
+            </span>
+            <span id="label-semiconductorIT" class="text-white text-xs absolute top-[65%] left-[70%]">
+                <span class="bg-[#C8AB83] text-[#262a33] px-1 py-0.5">$29,410.12 Profit</span><br>
+                <span class="bg-[#C8AB83] text-[#262a33] px-1 py-0.5">Withdrawn: 02/28/2026 4:20:41 PM GMT</span>
+            </span>
+        </div>
+
+        <div class="step z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81"> <span class="hover-animate">'Will the US Strike Iran by 28th February'</span>was one of the most popular geopolitical markets. It attracted 218,033 transactions, from 22,939 unique wallets. The total volume traded was $USD89,652,867</div>
+        </div>
+        <div class="step draw z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">Long bets, defined as wagers of more than $2,500 and under the median price of $0.32 per share, were placed by just 255 wallets. At least 78 were fresh accounts which had no history before the war.</div>
+        </div>
+        <div class="step zoom z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">During the last 12 hours before the strike, these made a total of $1.7 million—approximately a third of all profits made during the time period.</div>
+        </div>
+        <div class="step fade-tracked z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">For some, the timing seemed either suspect or extremely lucky. <a href="https://polymarket.com/de/0x45647817f1e2f706748da27ed717ecae9b674a11" class="underline hover-animate">0x45647</a>, an account with no prior history of trading, took a long position less than 2 hours before the strikes began.</div>
+        </div>
+        <div class="step grow_456 z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">By 9AM, its $18,700 investment would be worth $98,700-a nearly 500% return. It cashed out all of its profits between 18:30 - 19:22pm on the same day, before deleting the account.</div>
+        </div>
+        <div class="step fade-456 z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">Another user flagged for suspicious activity is Dicedicedice. Between 1-2 AM on the morning of the 28th February, the account bought 149,995 YES Shares at $0.20 per share.</div>
+        </div>
+        <div class="step grow_dicedicedice z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">Just like 0x45647, the wallet would reap a windfall before its disappearing act. It made $119,963 dollars and cashed out at 4:17pm on the same day.</div>
+        </div>
+
+        <div class="step annotate_dicedicedice z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">On-chain data from Polygonscan and Polywatcher reveal just how new it was. Dicedicedice's account was created just one day before the strike on 27th February. It was funded at 2 minutes past midnight on the 28th, just 5 minutes before it began making its bets.</div>
+        </div>
+        <div class="step dji z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81"> Djijaij83jdo4jdlwjflsg follows a similiar pattern. It joined Polymarket on 28th February, funded itself at 00:56AM and won $32,399.99 (426.32%) by the day's end</div>
+        </div>
+        <div class="step pause z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">Several of the accounts on Polymarket are also closely coordinated and connected to the same network.</div>
+        </div>
+        <div class="step solana z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">@aaamsaasa and @semiconductorIT made bets within 20 minutes of each other at 5:08AM and 5:27AM respectively. After winning $30,157.58 and $29,410.12 respectively, they would also withdraw their money at the same time.</div>
+        </div>
+        <div class="step withdraw z-10 min-h-screen mx-auto max-w-prose p-8 m-7 flex items-center">
+            <div class="bg-[#262f40] p-8 text-white opacity-81">At 16:15pm and 16:20pm, they cashed out all of their winnings to the same Solana wallet: 4dlzqynk9szjf6. Both have been inactive since March.</div>
+        </div>
+        <p class="text-xs relative z-10 mx-auto max-w-prose text-gray-400 mb-4 text-center"> Polymarket transactions for the market "US strikes Iran by February 28, 2026?" Sources: Dune Analytics, Polygonscan, Polymarket API</p>
+        </section>
+     
+       
+        <div class="mx-auto mt-20 px-8 w-full">
+            <div class="mx-auto max-w-prose pt-4 pb-4">
+             The anonymity of onchain transactions make it difficult to ascertain a true insider, but the pattern of suspicious behaviour is equally difficult to dismiss. 64 of the 78 wallets highlighted by BLOCKHEAD Research were less than 2 months old. 71 of them have been completely inactive since their wins on the 28th of February.
+
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            At least 6 of the Polymarket acccounts have been deleted at the time of writing. Their display names are now listed as 'anon'—the default assigned to deleted wallets.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+             Jon, who specialises in blockchain investigations, finds their funding patterns odd. At least three of the wallets had used the same 'somewhat obscure' bridge to fund their Polymarket accounts.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            "This does not mean they are the same person. It doesn't even prove they are all related. But Polymarket is a casino,  think of this as catching 3 "unrelated" card cheats at your casino and they all have receipts for the same motorway rest stop 500km away in their pockets. It is suspicious," he explained.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Unusual trading patterns were also observed in the several geopolitical markets on that fateful morning. Blockhead Research analysed the flow of liquidity in the last six hours before the start of the Iran war. In three separate markets related to the Iran war, trading spiked sharply between 5-6 AM UTC, just one hour before the strikes were launched and the war became public knowledge.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            The spike was highly directional. Most of the traffic came from users buying YES shares for 'Will the US Strike Iran by 28th February?", "Will the US Strike Iran by 31 March?" and "Will the US next strike Iran on February 28, 2026 (ET)?". There was corresponding spike in traffic for NO shares. 
+        </div>
+
+        <div class="headline mx-auto max-w-prose text-center font-bold text-2xl mt-10 pt-8 pb-4">
+            <span class="inline-flex items-center gap-3"><span class="w-4 h-4 bg-green-500 shrink-0"></span>Trading volumes on Polymarket spiked between 5-6AM.</span><br>
+            Roughly one hour before the first strikes began.
+        </div>
+        
+        <div class="standard_1 w-full h-full mb-5 pt-8 mt-8 ">
+        </div>
+
+        <div class="line_2 w-full grid grid-cols-2 gap-2 pb-8">
+
+            <div class="standard_2 w-full h-100">
+            </div>
+
+            <div class="standard_3 w-full h-100">
+            </div>
+            </div>
+        </div>
+
+
+        <div class="mx-auto w-full">
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+             For 'Will the US Strike Iran by 28th February', there were five times as many YES shares bought between 5-6 AM than in the previous hour. The sudden surge in demand drove the price upwards from $0.15 per share to $0.25 per share by 6AM.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+             Accounting for the mystery of this 5AM surge is difficult. <a href="https://www.mantic.com/forecasting-iran-crisis" class="underline hover-animate" target="_blank">Mantic AI</a>, a leading AI forecasting lab based in Oxfordshire, failed to pick up on the pre-strike signals which informed Polymarket traders. According to its Iran report, the first indications of conflict originating from market signals came at 6:17AM—2 minutes after the strikes had began. 
+        </div>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+             Hannah Su, a freelance shipping analyst, has examined the AIS transponder data from the US Aircraft Carriers involved in the war. She says there is little open source information to suggest that a strike would be imminent. Neither the USS Abraham Lincoln nor the USS Gerald Ford had turned on its AIS transponder on the 28th—their last pubilicly-known locations were in the Straits of Malacca and off the coast of Morocco.
+        </div>
+
+        <div class="headline mx-auto max-w-prose text-center font-bold text-2xl mt-10 pt-8 pb-4">
+            <span class="inline-flex items-center gap-3"><span class="w-4 h-4 bg-green-500 shrink-0"></span>Last known positions of US Aircraft Carriers involved in the war.</span>
+        </div>
+
+        <div class="pt-8 pb-8 grid grid-cols-2 gap-2">
+             <div>
+                <img src="/pics/Abraham Lincoln.png" alt="USS Abraham Lincoln AIS" class="w-auto h-auto object-cover pl-4 pr-4">
+             </div>
+             <div>
+                <img src="/pics/Gerald Ford.png" alt="USS Gerald Ford AIS" class="w-auto h-auto object-cover pl-4 pr-4">
+             </div>
+        </div>
+        <p class="text-xs text-gray-400 mb-8 text-center"> Latest AIS transponder data from US vessels involved in the conflict. Sources: Global Fishing Watch</p>
+
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+             Hannah [Quote] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+             Neither did X or discord give any indication of the strike one hour before it happened. According the data scraped compiled by BlOCKHEAD Research, mentions of Iran, Strike and Khamenei had quietened down in the early morning.
+        </div>
+        
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+             There've been previous spikes in activity on X in early January and mid-February, which had spurred increased trading on Polymarket. However, the 5AM spike seemed to be entirely unmotivated. We found no evidence of any news reports or social media chatter which could be linked to the trading spike.
+        </div>
+        <!-- <div class="mx-auto max-w-prose pt-4 pb-4">
+            However, neither news reports not social media chatter could have provided the signals to spur the surge in trading. 
+        </div> -->
+        <div class="mx-auto max-w-prose pt-8 pb-8">
+             <span class="chapter-head headline text-2xl inline-flex items-center gap-3"><span class="w-4 h-4 bg-green-500 shrink-0"></span>The Regulatory Pretzel</span>
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            During the company's infancy, Polymarket CEO <a href="https://www.ft.com/content/a46741cd-9bbc-4fd4-9a5d-9f860d36023c?syn-25a6b1a6=1" class="underline hover-animate" target="_blank">Shayne Coplan</a> had celebrated the presence of insiders. In a CBS interview from 2024, Coplan claimed that insiders would 'bring a lot of benefits to the market.'
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            <a href="https://www.dlnews.com/articles/regulation/kalshi-ceo-tackles-difficulty-of-cracking-down-on-insider-trading/" class="underline hover-animate" target="_blank">Kalshi's CEO</a> made the same point, arguing for the relevance of 'nonmaterial nonpublic information'.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            In recent months, the companies have changed their tune. The intense media scrutiny seemed to have spurred an policy reversal on the use of confidential information. In April, Polymarket has hired <a href="https://www.businesswire.com/news/home/20260430726176/en/Polymarket-Selects-Chainalysis-to-Deploy-First-of-Its-Kind-On-Chain-Market-Integrity-Solution" class="underline hover-animate" target="_blank">Chainanalysis</a>—a leading blockchain analytics firm—to monitor its trading activities and to refine its 'detection methods.' It has also tapped <a href="https://investors.palantir.com/news-details/2026/Polymarket-Partners-With-Palantir-and-TWG-AI-to-Build-Next-generation-Sports-Integrity-Platform/" class="underline hover-animate" target="_blank">Palantir and TWG AI</a> to build what it calls a next generation 'Sports Integrity Platform'.
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mx-auto max-w-3xl mt-10 pt-8 pb-4">
+            <img src="/pics/drew_cukor_3.jpg" alt="TWG CEO" class="w-full h-auto object-cover">
+            <img src="/pics/shayne_coplan.jpeg" alt="Polymarket CEO" class="w-full h-auto object-cover">
+
+        </div>
+        <p class="text-xs mx-auto max-w-prose text-gray-400 mb-10 pb-8 pt-4 text-center">Left: Drew Cukor, TWG Global AI Lead and former Marine Corp Colonel responsible for the Pentagon's AI targeting system | Right: Shayne Coplan, Polymarket CEO</p>
+
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            It remains to be seen if such efforts will be successful. Simon is optimistic because he believes that prediction markets have a commercial incentive to keep themselves corruption-free. He argues that it's not in Kalshi or Polymarket's long-term self-interest to run 'weird scam markets where the outcome is known.'
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            The recent arrest of Google Engineer Michele Spagnuolo (a.k.a AlphaRaccoon) for insider trading is a prime example. He said: "If I'm Google and I say to all employees let's go out there and use the company's information to bet... it would destroy any market in the long-term."
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            "Who's gonna want to bet on Google markets when the counterparty is Google? There's not like an endless supply of idiots who will be willing to give money to Google employees."
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            He also predicts that Polymarket and Kalshi will get better at preventing insider trading as their user base grows. "I think there will be protections in place. I think prediction markets will get better at not running markets that are just baked for insider trading; For example, will X candidate drop out of the election race at Y date."
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Professor John Cheyne-Lippold, who researches digital futurity at the University of Michigan, does not share this view. The idea that prediction markets can be effectively controlled is a illusion. When you have markets on everything from the Israeli airstrikes to Brad Pitt's next marriage, policing is likely to be futile.
+        </div>
+        
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            "The regulations that enable you to go after it are impossible. If you financialize everything, then you have to regulate everything, and it's really hard to regulate everything," he argues.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            He is also skeptical of the idea that an equilibrium could be reached as users logically abandon markets which they intuit to be unfair. In his ethnographic research on sports betting, Professor Lippold notes that many bettors believe in their own individual exceptionalism.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            "A lot of people think they're smarter than Vegas, than the odds. There's this weird conceit where you think everyone's a sucker but me," he said. This self-delusion plays out on Polymarket as well, with users continuing to place bets on markets where they are clearly at a disadvantage.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            "People are betting on how Love Island is going to end. How can you? That's insane. It already is finished, you know. For certain, that some people know that information."
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Indeed, many critics are doubtful if the USA government even has a desire to oversee Polymarket. For starters, the company enjoys strong ties to the Trump administration. Donald Trump Junior is an advisor and investor to Polymarket thanks to his venture capital firm <a href="https://www.reuters.com/business/polymarket-secures-investment-trump-jr-backed-1789-capital-2025-08-26/" class="underline hover-animate" target="_blank">1789 Capital</a>. Trump himself has also praised prediction markets on Truth Social, promising that they will 'thrive' under his rule.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            The body responsible for regulating prediction markets is the Commodity Futures Trading Commission (CFTC). Its Chairman, Michael Selig, is a recent appointment who seems to spend more time defending the markets rather than investigating them.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            The agency is currently mired in a tangle of lawsuits. Under Selig, the CFTC has sued Arizona, New Mexico, Connecticut, Kentucky and Illinois for attempting to ban prediction markets—arguing that it has exclusive regulatory jurisdiction.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Meanwhile, the CFTC is also being sued by the <a href="https://www.ft.com/content/b7a788de-0f31-4b31-992b-45ddf92ccdcb" class="underline hover-animate" target="_blank">Chicago Mercantile Exchange</a> for allowing Polymarket to sell 'perpetual futures' in violation of existing regulation. The CFTC dismissed CME's suit as 'lawfare' and mocked the futures exchange for being 'scared' of competition.
+        </div>
+        <div id="legal-docs-gallery" class="mx-auto w-full max-w-5xl mt-10 pt-8 pb-8 grid grid-cols-4 gap-4">
+            <a href="/pics/pdf/thumbs/CMEvCFTC-01.png" data-lg-size="1275-1650"><img src="/pics/pdf/thumbs/CMEvCFTC-01.png" alt="CME v CFTC complaint" class="w-full object-cover border border-white/20"></a>
+            <a href="/pics/pdf/thumbs/ENFNewYorkComplanit042426-01.png" data-lg-size="1275-1650"><img src="/pics/pdf/thumbs/ENFNewYorkComplanit042426-01.png" alt="New York enforcement complaint" class="w-full object-cover border border-white/20"></a>
+            <a href="/pics/pdf/thumbs/ENFWisconsinComplaint042826-01.png" data-lg-size="1275-1650"><img src="/pics/pdf/thumbs/ENFWisconsinComplaint042826-01.png" alt="Wisconsin enforcement complaint" class="w-full object-cover border border-white/20"></a>
+            <a href="/pics/pdf/thumbs/OGC_KentuckyComplaint062326-01.png" data-lg-size="1275-1650"><img src="/pics/pdf/thumbs/OGC_KentuckyComplaint062326-01.png" alt="Kentucky complaint" class="w-full object-cover border border-white/20"></a>
+            <a href="/pics/pdf/thumbs/OGC_MinnesotaComplaint051926-001.png" data-lg-size="1275-1650"><img src="/pics/pdf/thumbs/OGC_MinnesotaComplaint051926-001.png" alt="Minnesota complaint" class="w-full object-cover border border-white/20"></a>
+            <a href="/pics/pdf/thumbs/OGC_NewMexicoComplaint061226-01.png" data-lg-size="1275-1650"><img src="/pics/pdf/thumbs/OGC_NewMexicoComplaint061226-01.png" alt="New Mexico complaint" class="w-full object-cover border border-white/20"></a>
+            <a href="/pics/pdf/thumbs/trio-01.png" data-lg-size="1275-1650"><img src="/pics/pdf/thumbs/trio-01.png" alt="Trio document" class="w-full object-cover border border-white/20"></a>
+        </div>
+        <p class="text-xs text-gray-400 mb-10 pt-8 text-center">A litany of litigation since Chairman Michael Selig took office. Source: CFTC</p>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            In an interview with <a href="https://www.wired.com/story/cftc-ai-suspicious-wallets/" class="underline hover-animate" target="_blank">WIRED</a>, Selig claimed the CFTC is using AI to find hundreds, thousands of suspicious wallets. As of July, however, no one has been arrested or prosecuted in relation to Iran.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Blockchain experts like Jon do not believe it's technical hurdles that are holding back law enforcement. His initial analysis indicated no 'mixers' or other obfuscation methods common to crypto. Many of the accounts were connected to Binance, which operates Know Your Customer verification for US consumers.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            "It's either very simple or very professional, like a mule. Given the amounts, it is likely to be an amateur. This is something that law enforcement could unravel if it cared," he said.
+        </div>
+
+        <div class="mx-auto max-w-prose pt-8 pb-8">
+             <span class="chapter-head headline text-2xl inline-flex items-center gap-3"><span class="w-4 h-4 bg-green-500 shrink-0"></span>The Future of Prediction</span>
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            The future has become a gold rush. On 24 June, Mark Zuckerberg announced that Meta would develop its own prediction market called <a href="https://www.nytimes.com/2026/06/23/technology/meta-prediction-markets-app.html?eafs_enabled=false" class="underline hover-animate" target="_blank">'Arena'</a>. He will join <a href="https://www.coinbase.com/predictions" class="underline hover-animate" target="_blank">Coinbase</a>, <a href="https://smarkets.com/" class="underline hover-animate" target="_blank">Smarkets</a>, <a href="https://www.predictit.org/" class="underline hover-animate" target="_blank">PredictIt</a>, <a href="https://crypto.com/us/prediction/" class="underline hover-animate" target="_blank">Crypto.com</a>, <a href="https://www.versusmarkets.io/" class="underline hover-animate" target="_blank">Versus</a> in an increasingly crowded landscape that offers odds on the world of tomorrow.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Alongside them, there's a thriving secondary market dedicated to insights, tools, bots and data that promises riches untold. Websites like <a href="https://unusualwhales.com/" class="underline hover-animate" target="_blank">Unusual Whales</a>, <a href="https://polygun.xyz/" class="underline hover-animate" target="_blank">Polygun</a>, <a href="https://www.polyresearchrobotics.com/" class="underline hover-animate" target="_blank">Poly Research and Robotics</a> advertise their services by publishing a neverending stream of FOMO. They spotlight wallets of probable insiders. Wallets that struck big on Superbowl ads. Wallets with an uncanny record on what Trump would say next. Wallets dedicated to the weather in Seoul, London or Chicago.
+        </div>
+
+        <div class="headline mx-auto max-w-prose text-center font-bold text-2xl mt-10 pt-8 pb-4">
+            <span class="inline-flex items-center gap-3"><span class="w-4 h-4 bg-green-500 shrink-0"></span>Markets have grown rapidly in the past year. Especially in the Middle East.</span>
+        </div>
+
+        <div id="map" class="map w-full h-screen mt-10 mb-10 relative">
+        <div class="absolute z-10 top-10 left-10">
+            <select onchange="showYear(this.value)" style="background-color: rgba(0, 0, 0, 0.75); color: white; font-size: 14px; padding: 4px 8px; border-radius: 3px;">
+                <option value="" disabled selected>Select year</option>
+
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+
+        </div>
+        <div class="absolute z-10 top-10 left-40">
+            <select onchange="flyToCountry(this.value)" style="background-color: rgba(0, 0, 0, 0.75); color: white; font-size: 14px; padding: 4px 8px; border-radius: 3px;">
+                <option value="" disabled selected>Select country</option>
+
+                <option value="Israel">Israel</option>
+                <option value="Iran">Iran</option>
+                <option value="Ukraine">Ukraine</option>
+            </select>
+            
+
+        </div>
+
+        <!-- <div id="info-panel" class="absolute z-10 top-10 left-100 w-100 bg-black bg-opacity-75 text-white p-4 text-s">
+            <p>The number of markets you can bet on has exploded</p>
+        </div> -->
+
+        <div class="absolute z-10 top-10 right-10 flex gap-4 items-center text-sm text-white" style="background:rgba(0,0,0,0.75); padding: 4px 10px; border-radius: 3px;">
+            <span class="inline-flex items-center gap-2"><span class="w-4 h-4 shrink-0" style="background:#157f3b"></span>Geographically specific</span>
+            <span class="inline-flex items-center gap-2"><span class="w-4 h-4 shrink-0" style="background:#e8f6e3"></span>Non-specific</span>
+        </div>
+
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            The backlash is equally fervent, with nearly every major media outlet publishing some sort of exposé on the prediction industry. Early accusations of 'immorality' have given way to more detailed investigations on <a href="https://www.wsj.com/business/media/polymarket-social-media-bets-prediction-market-441cdeb5?eafs_enabled=false" class="underline hover-animate">deceptive advertising</a> or <a href="https://acdatacollective.org/" class="underline hover-animate">the unusual win rate of politics markets</a>.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Even professional forecasters like Simon who've made careers from prediction are wary of the industry's association with gambling. In a utopian world, he says, prediction markets can serve as a useful financial instrument for companies to hedge risk—much like derivatives. For example, big companies could set up expected negative value bets to insure themselves from outcomes in the real world.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            "If a company is going to be regulated out of existence when someone wins an election, they might bet on the person winning as a form of insurance," he suggests. "They might lose money when the politician loses, but they're going to be happy."
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            The possible negative externalities, however, are equally real. 
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            "However, if instead it's just people just going and making degenerate bets on the outcome of some person says some word on some given day, and they're all losing money to the smarter traders... that's not ideal."
+        </div>
+
+        <div>
+            <img src="/pics/belfast-visual.jpg" alt="belfast" class="mx-auto w-[70%] h-auto object-cover mb-10 pt-8">
+        </div>
+        <p class="text-xs text-gray-400 mb-10 pt-2 text-center">A user on Polymarket's Discord server proposes a market for anti-migrant riots in Belfast. <br>The request was not approved. Source: Polymarket Discord</p>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            For Professor Cheyne-Lippold, however, there is a more interesting question: What is it about this particular moment in history that has made prediction markets so irresistible to so many?
+        </div>
+        
+      
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+             In his view, it is not just the promise of riches, but the diminishing returns from a precarious present. Capitalism without monopoly operates under the law of depreciating returns, he argues. "If you have Little Caesars and Pizza Hut competing against each other, the profit margins are going to get thinner and thinner. Which is why you have to move abroad, import immigrant labour that you can pay very cheaply, or source materials from Sri Lanka instead of Detroit."
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Prediction markets represent a temporal fork of capitalism's spatial expansion—a means of commodifying the near future. "If I can't make money from the present anymore, then I'm going to look to the temporary horizon of the future to make my money," he said.
+        </div>
+       
+         <div class="mx-auto max-w-prose pt-4 pb-4">
+            As an 'annoying professor', he is critical of how the future is being rapidly financialised. In practice, he believes the 'genie's out of the bottle'. Much like bitcoin or the online piracy, people are going to find a way to participate and profit from these markets.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+           "Society doesn't work in this way. You can't just shake your finger at it and say 'go back to where it was.' I think we're going to see more and more institutions and people following these markets because there's a huge amount of money on it, just like cryptocurrency."
+        </div>
+    
+        <!-- <div class="mx-auto max-w-prose pt-4 pb-4">
+            For many, the money is just simply too hard to resist. <a href="https://polymarket.com/de/@djijaij83jdo4jdlwjflsg" class="underline hover-animate" target="_blank">Djijaij83jdo4jdlwjflsg</a> had cashed out his winnings at 11:40pm on the same day.
+        </div> -->
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Indeed, some of the accounts found themselves sucked back into prediction, despite the clearly elevated risks. <a href="https://polymarket.com/de/@djijaij83jdo4jdlwjflsg" class="underline hover-animate" target="_blank">Djijaij83jdo4jdlwjflsg</a>, for example, had cashed out all of his Feb 28th winnings on 11:40pm. The account lay dormant for nearly a month, before it suddenly sprang back into action.
+        </div>
+
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            In early April, it made a $67,592 bet that a US-Iran ceasefire would be reached by April 7th. Once again, he was proven right. The investment yielded a nearly 1000% return worth $433,481-a sum large enough to draw the suspicion of the <a href="https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-08-2026/card/trio-of-polymarket-accounts-made-600-000-betting-on-iran-cease-fire-tDMRqib5dscCBrVrED0a?eafs_enabled=false" class="underline hover-animate" target="_blank">Wall Street Journal</a>. Just like before, the user would withdraw all of its winnings by the next day, leaving Polymarket for good.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            Is <a href="https://polymarket.com/de/@djijaij83jdo4jdlwjflsg" class="underline hover-animate" target="_blank">djijaij83jdo4jdlwjflsg</a> a forecaster who can read the tea leaves better than 99% of experts, or someone who sitting pretty in some corner of the White House? The question is a crucial for the future of prediction markets, but nobody in power seems particularly interested in finding the answers.
+        </div>
+        <div class="mx-auto max-w-prose pt-4 pb-4">
+            For now, only the future knows. In the absence of any real enforcement, the best anyone can offer is a probability. On Manifold, the odds of catching that next insider are as follows: 58% Israeli Defence Forces, 39% OpenAI, 39% SpaceX, 36% KPMG, 34% Mr Beast, and 33% Amazon. 
+        </div>
+        <hr class="border-white/20 mx-auto max-w-prose my-8">
+        <p class="mx-auto max-w-prose text-s text-gray-400 pt-4 pb-8">
+            Methodology: Research for this article draws from a variety of onchain sources, including DUNE analytics, Polygonscan, Polywatcher, Polymarket API, and the Polymarket Discord server. AIS transponder data was sourced from Global Fishing
+        </p>
+           <p class="mx-auto max-w-prose text-s text-gray-400 pt-4 pb-8">
+            With thanks to Jon Reiter, 'Simon', Hannah Su, Professor John Cheyne-Lippold, Dr David Young, Andy Freeman, Josh Cheetham, Nathan Walker and everyone forced to listen to me ramble about CLOB servers. Contact me at pannjie@gmail.com.
+        </p>
+        <div class="mx-auto max-w-prose pt-4 pb-8">
+            
+
+        </div>
+
+        
+       
+
+</body>
+</html>
