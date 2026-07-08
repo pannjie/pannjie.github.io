@@ -10,7 +10,7 @@ const marginBottom = 40;
 const marginLeft = 60;
 
 const data = [
-    {label: 'Will President Donald Trump say "America" at his next public speech?', yes: 0.9, no: 0.1},
+    {label: 'Will President Donald Trump say "America" at his next public speech?', yes: 0.8, no: 0.2},
 ]
 
 const initial = { yes: data[0].yes, no: data[0].no };
